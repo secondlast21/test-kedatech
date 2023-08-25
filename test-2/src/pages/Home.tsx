@@ -4,10 +4,15 @@ import Art from '../../public/art.svg'
 import About from './About'
 import Pricing from './Pricing'
 import Contact from './Contact'
+import { Helmet } from 'react-helmet'
 
 const Home: FC = () => {
   return (
     <>
+      <Helmet>
+            <title>{`ERP App`}</title>
+            <meta name='description' content='ERP Home Page' />
+      </Helmet>
       <Navbar />
       <main className='flex-wrap justify-center items-center gap-28 sm:flex mb-20' id='home'>
         <div>
